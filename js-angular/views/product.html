@@ -1,0 +1,157 @@
+<section id="product">
+    <div class="container">
+        <!-- Product Details-->
+        <div class="row">
+            <!-- Left Image-->
+            <div class="span4">
+                <ul class="thumbnails mainimage">
+                    <li class="span4">
+                        <div id="wrap" style="top: 0px; z-index: 99; position: relative; display: block;"><a rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" class="thumbnail cloud-zoom" href="img/product1big.jpg" style="position: relative; display: block;">
+                <img src="{{product.img}}" alt="" title="" style="display: block;">
+              </a>
+                            <div class="mousetrap" style="background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 370px; height: 555px; left: 0px; top: 0px; cursor: move;"></div>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div id="wrap" style="top: 0px; z-index: 99; position: relative; display: none;"><a rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" class="thumbnail cloud-zoom" href="img/product2big.jpg" style="position: relative; display: block;">
+                <img src="img/product2big.jpg" alt="" title="" style="display: block;">
+              </a>
+                            <div class="mousetrap" style="background-image:url(&quot;.&quot;);z-index:999;position:absolute;width:0px;height:0px;left:0px;top:0px;"></div>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div id="wrap" style="top: 0px; z-index: 99; position: relative; display: none;"><a rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" class="thumbnail cloud-zoom" href="img/product1big.jpg" style="position: relative; display: block;">
+                <img src="img/product1big.jpg" alt="" title="" style="display: block;">
+              </a>
+                            <div class="mousetrap" style="background-image:url(&quot;.&quot;);z-index:999;position:absolute;width:0px;height:0px;left:0px;top:0px;"></div>
+                        </div>
+                    </li>
+                </ul>
+                <span>Mouse move on Image to zoom</span>
+                <ul class="thumbnails mainimage">
+                    <li class="producthtumb">
+                        <a class="thumbnail">
+                <img src="img/product2.jpg" alt="" title="">
+              </a>
+                    </li>
+                    <li class="producthtumb">
+                        <a class="thumbnail">
+                <img src="img/product1.jpg" alt="" title="">
+              </a>
+                    </li>
+                    <li class="producthtumb">
+                        <a class="thumbnail">
+                <img src="img/product2.jpg" alt="" title="">
+              </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right Details-->
+            <div class="span5">
+                <div class="row">
+                    <div class="span5">
+                        <h1 class="productname"><span class="bgnone">{{product.title}}</span></h1>
+                        <div class="productprice">
+                            <div class="productpageprice">
+                                <span class="spiral"></span>${{product.price}}</div>
+                            <ul class="rate">
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="on"></li>
+                                <li class="off"></li>
+                                <li class="off"></li>
+                            </ul>
+                        </div>
+                        <div class="quantitybox">
+                            <select class="selectsize">
+                                <option>Select Size</option>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                                <option>Black</option>
+                            </select>
+                            <select class="selectqty">
+                                <option>Select</option>
+                                <option>24</option>
+                                <option>36</option>
+                                <option>48</option>
+                            </select>
+                            <div class="clear"></div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="optionsCheckboxList2" value="option2"> Option two can also be checked and included in form results </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="optionsCheckboxList3" value="option3"> Option three can—yes, you guessed it—also be checked and included in form results </label>
+                                    `
+                                    <label class="radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one is this and that—be sure to include why it's great </label>
+                                    <label class="radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one </label>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="productpagecart">
+                            <li><a class="cart" href="#">Add to Cart</a>
+                            </li>
+                            <li><a class="wish" href="#">Add to Wishlist</a>
+                            </li>
+                            <li><a class="comare" href="#">Add to Compare</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <aside class="span3">
+                <!--Category-->
+                <div class="sidewidt">
+                    <h2 class="heading2"><span>Categories</span></h2>
+                    <ul class="nav nav-list categories">
+                        <li>
+                            <a href="category.html">Men Accessories</a>
+                        </li>
+                        <li>
+                            <a href="category.html">Women Accessories</a>
+                        </li>
+                        <li>
+                            <a href="category.html">Electronics </a>
+                        </li>
+                        <li>
+                            <a href="category.html">Computers </a>
+                        </li>
+                        <li>
+                            <a href="category.html">Home and Furniture</a>
+                        </li>
+                        <li>
+                            <a href="category.html">Others</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Best sellter-->
+                <div class="sidewidt">
+                    <h2 class="heading2"><span>Best Seller</span></h2>
+                    <ul class="bestseller">
+                        <li>
+                            <img width="50" height="50" src="img/prodcut-40x40.jpg" alt="product" title="product">
+                            <a class="productname" href="product.html"> Product Name</a>
+                            <span class="procategory">Women Accessories</span>
+                            <span class="price">$250</span>
+                        </li>
+                        <li>
+                            <img width="50" height="50" src="img/prodcut-40x40.jpg" alt="product" title="product">
+                            <a class="productname" href="product.html"> Product Name</a>
+                            <span class="procategory">Electronics</span>
+                            <span class="price">$250</span>
+                        </li>
+                        <li>
+                            <img width="50" height="50" src="img/prodcut-40x40.jpg" alt="product" title="product">
+                            <a class="productname" href="product.html"> Product Name</a>
+                            <span class="procategory">Electronics</span>
+                            <span class="price">$250</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>

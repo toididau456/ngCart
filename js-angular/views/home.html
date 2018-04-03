@@ -1,0 +1,25 @@
+<section id="featured" class="row mt40">
+    <div class="container">
+        <h1 class="heading1"><span class="maintext">Featured Products</span><span class="subtext"> See Our Most featured Products</span></h1>
+        <ul class="thumbnails">
+            <li class="span3" ng-repeat="product in products">
+                <a class="prdocutname" href="product.html">{{product.title}}</a>
+                <div class="thumbnail">
+                    <span class="sale tooltip-test">Sale</span>
+                    <a href="product/{{$index}}"><img alt="" src="{{product.img}}" style="height:337px;"></a>
+                    <div class="shortlinks">
+                        <a class="details" href="#">DETAILS</a>
+                        <a class="wishlist" href="#">WISHLIST</a>
+                        <a class="compare" href="#">COMPARE</a>
+                    </div>
+                    <div class="pricetag">
+                        <span class="spiral"></span><a href="#" class="productcart">ADD TO CART</a>
+                        <div class="price">
+                            <div class="pricenew">${{product.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
