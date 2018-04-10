@@ -1,7 +1,9 @@
-app.controller('HomeController', ['$scope', 'product', 'cart', function ($scope, product, cart) {
-	product.success(function(data){
+app.controller('HomeController', ['$scope', 'product', 'ngCart', function ($scope, product, ngCart) {
+	product.then(function(data){
 		$scope.products = data;
 	});
-	cart.quantity = 5;
-	console.log(cart);
+
+	$scope.total = ngCart.totalPrice;
+	$scope.ngCart = ngCart;
+
 }]);

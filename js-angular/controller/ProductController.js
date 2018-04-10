@@ -1,8 +1,7 @@
-app.controller('ProductController', ['$scope', 'product', 'cart', '$routeParams', function($scope, product, cart, $routeParams) {
-    product.success(function(data) {
+app.controller('ProductController', ['$scope', 'ngCart', 'product', '$routeParams', function($scope, ngCart, product, $routeParams) {
+    product.then(function(data) {
         $scope.product = data[$routeParams.id];
     });
-    cart.quantity = 2;
-    console.log(cart);
-
+    
+    $scope.ngCart = ngCart;
 }]);

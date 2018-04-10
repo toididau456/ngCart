@@ -1,20 +1,24 @@
 [
 	{
+		"id" : 1,
 		"title": "Ao Somi",
-    	"price": "50000",
+    	"price": "88000",
     	"img" : "http://mydeal.vn//images/uploaded/434x267/69e6ff769655dac7ebf920d2caa52065.jpg"
 	},
 	{
+		"id" : 2,
 		"title": "Ao Somi 2",
     	"price": "60000",
     	"img" : "https://static.hotdeal.vn/images/1412/1412366/400x500/318494-ao-so-mi-nu-dai-tay-no-vien-co-noi-bat.jpg"
 	},
 	{
+		"id" : 3,
 		"title": "Ao Somi 3",
     	"price": "70000",
     	"img" : "https://static.hotdeal.vn/images/1412/1412366/400x500/318494-ao-so-mi-nu-dai-tay-no-vien-co-noi-bat.jpg"
 	},
 	{
+		"id" : 4,
 		"title": "Ao Somi 4",
     	"price": "80000",
     	"img" : "http://thoitrangtre.biz/wp-content/uploads/2016/06/ao-so-mi-cong-so-690x490.jpg"
