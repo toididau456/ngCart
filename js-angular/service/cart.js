@@ -26,7 +26,8 @@ app.run(['$rootScope', 'ngCart', function($rootScope, ngCart) {
     this.deleteItem = function(id) {
         var items = this.$cart.items;
         this.$cart.items = items.filter(item => item.id != id);
-    }
+        angular.element(document.querySelector("#product_" + id)).remove();
+    };
 
     this.priceProduct = function(price, quantity) {
         return parseInt(price) * parseInt(quantity);
