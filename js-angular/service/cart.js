@@ -1,7 +1,7 @@
 app.run(['$rootScope', 'ngCart', function($rootScope, ngCart) {
     ngCart.init();
 }])
-.service('ngCart', [function() {
+.service('ngCart', ['$http', function($http) {
     this.init = function() {
         this.$cart = {
             items: []
@@ -41,5 +41,18 @@ app.run(['$rootScope', 'ngCart', function($rootScope, ngCart) {
         });
 
         return total;
+    };
+
+    this.checkout = function() {
+        $http.post('http://192.168.33.14/learn/angular/simpleone/php/save_data.php', {
+            product: JSON.stringify(this.$cart.items)
+        }).then(
+            function(response) {
+                console.log(response.data);
+            },
+            function(error) {
+                console.log(error);
+            }
+        );
     };
 }]);
